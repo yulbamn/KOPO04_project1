@@ -223,7 +223,7 @@ public class 에버랜드 {
 	    	  		}
 	    	  	
 	    	  	System.out.println("ㅡ");
-	    	  	System.out.print("1. 추가구매, 2. 구매완료\n");
+	    	  	System.out.print("1. 추가구매 2. 구매완료\n");
 	    	  	System.out.print(": ");
 	    	  	add = myInput.nextInt();
 	    	  	
@@ -232,8 +232,7 @@ public class 에버랜드 {
 	    	  	arrCount[orderCount] = count;
 	    	  	arrPrice[orderCount] = price;
 	    	  	arrB[orderCount] = b;	
-	    	  	orderCount++;
-	    	  	
+	    	  	orderCount++;    	  	
 	    	} while(add == 1);	
 	    	
 			System.out.println("ㅡ");
