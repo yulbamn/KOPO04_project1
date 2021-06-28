@@ -196,77 +196,56 @@ public class 에버랜드 {
 			case 1: b = "우대적용 없음"; break;
 			case 2: b = "장애인 우대적용"; 
 			if(ticket == "A 티켓") {
-				if(age == "어른") {
-					price = 36000;
-				} else if(age == "36개월미만") {
-					price = 0;
-				} else {price = 28000;}
+				if(age == "어른") {price = 36000;} 
+				else if(age == "36개월미만") {price = 0;} 
+				else {price = 28000;}
 			} else if(ticket == "B 티켓") {
-				if(age == "어른") {
-					price = 33000;
-				} else if(age == "36개월미만") {
-					price = 0;
-				} else {price = 26000;}
+				if(age == "어른") {price = 33000;} 
+				else if(age == "36개월미만") {price = 0;} 
+				else {price = 26000;}
 			} else {
-				if(age == "어른") {
-					price = 30000;
-				} else if(age == "36개월미만") {
-					price = 0;
-				} else {price = 24000;}
+				if(age == "어른") {price = 30000;} 
+				else if(age == "36개월미만") {price = 0;} 
+				else {price = 24000;}
 			} break;
 			case 3: b = "국가유공자 우대적용"; 
 			if(ticket == "A 티켓") {
-				if(age == "어른") {
-					price = 30000;
-				} else if(age == "36개월미만") {
-					price = 0;
-				} else {price = 24000;}
+				if(age == "어른") {price = 30000;} 
+				else if(age == "36개월미만") {price = 0;} 
+				else {price = 24000;}
 			} else if(ticket == "B 티켓") {
-				if(age == "어른") {
-					price = 28000;
-				} else if(age == "36개월미만") {
-					price = 0;
-				} else {price = 22000;}
+				if(age == "어른") {price = 28000;} 
+				else if(age == "36개월미만") {price = 0;} 
+				else {price = 22000;}
 			} else {
-				if(age == "어른") {
-					price = 25000;
-				} else if(age == "36개월미만") {
-					price = 0;
-				} else {price = 20000;}
+				if(age == "어른") {price = 25000;} 
+				else if(age == "36개월미만") {price = 0;} 
+				else {price = 20000;}
 			} break;
 			case 4: b = "다자녀 우대적용"; 
 			if(ticket == "A 티켓") {
-				if(age == "어른" || age == "청소년") {
-					price = 48000;
-				} else if(age == "36개월미만") {
-					price = 0;
-				} else {price = 38000;}
+				if(age == "어른" || age == "청소년") {price = 48000;} 
+				else if(age == "36개월미만") {price = 0;} 
+				else {price = 38000;}
 			} else if(ticket == "B 티켓") {
-				if(age == "어른" || age == "청소년") {
-					price = 44000;
-				} else if(age == "36개월미만") {
-					price = 0;
-				} else {price = 35000;}
+				if(age == "어른" || age == "청소년") {price = 44000;} 
+				else if(age == "36개월미만") {price = 0;} 
+				else {price = 35000;}
 			} else {
-				if(age == "어른" || age == "청소년") {
-					price = 40000;
-				} else if(age == "36개월미만") {
-					price = 0;
-				} else {price = 32000;}
+				if(age == "어른" || age == "청소년") {price = 40000;} 
+				else if(age == "36개월미만") {price = 0;} 
+				else {price = 32000;}
 			} break;
 			case 5: b = "임산부 우대적용"; 
 			if(ticket == "A 티켓") {
-				if(age == "36개월미만") {
-					price = 0;
-				} else {price = 51000;}
+				if(age == "36개월미만") {price = 0;} 
+				else {price = 51000;}
 			} else if(ticket == "B 티켓") {
-				if(age == "36개월미만") {
-					price = 0;
-				} else {price = 47000;}
+				if(age == "36개월미만") {price = 0;} 
+				else {price = 47000;}
 			} else {
-				if(age == "36개월미만") {
-					price = 0;
-				} else {price = 42000;}
+				if(age == "36개월미만") {price = 0;} 
+				else {price = 42000;}
 			} break;
 			}
 			
