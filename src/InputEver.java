@@ -1,18 +1,13 @@
 package everlandFinal;
 
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.Scanner;
 
 public class InputEver {
-
 	
-	public   int reservationDate = 0, benefit = 0, count = 0, birthMonth = 0, birthDay = 0, 
-			  add = 0, sum=0;	
-	public   String ticket = null, socialNumber = null;
+	public int reservationDate = 0, benefit = 0, count = 0, birthMonth = 0, birthDay = 0, add = 0, sum=0;	
+	public String ticket = null, socialNumber = null;
 	
-	public   void inputDate() {		
+	public void inputDate() {		
 	  	while(true) {	  		
 	  		System.out.println("--------------------------------------");
 	  		System.out.println("이용날짜를 입력해주세요.(숫자로만 20210628)");
@@ -64,15 +59,8 @@ public class InputEver {
 	  		}
 	  	}
 	}
-	
-	
-//	public   void confirmTicket() {
-//	  	if(ticket == "A 티켓") {price = 60000;} 
-//	  	else if(ticket == "B 티켓") {price = 56000;} 
-//	  	else {price = 50000;}
-//	}
-	
-	public   void inputSocialnumber() {
+		
+	public void inputSocialnumber() {
 		while(true) {
 	  		System.out.print("주민번호 앞자리를 입력하세요.(숫자로만 951123)(0 누르면 처음으로)\n");
 	  		System.out.print(": ");
@@ -92,9 +80,8 @@ public class InputEver {
 	  		else {break;}
 	  	}
 	}
-	
-	
-	public   void inputCount() {
+		
+	public void inputCount() {
 		while(true) {
 	  		System.out.println("몇개를 주문하시겠습니까?(0 누르면 처음으로)");
 	  		System.out.print(": ");
@@ -105,7 +92,7 @@ public class InputEver {
 	  	}
 	}
 	
-	public   void inputBenefit() {
+	public void inputBenefit() {
 	  	while(true) {
 	  		System.out.println("우대사항을 선택하세요.(0 누르면 처음으로)");
 	  		System.out.println("1. 없음 (나이 우대는 자동처리)");
@@ -122,10 +109,8 @@ public class InputEver {
 	  			continue;}
 	  	}
 	}
-	
-
-	
-	public   void inputAdd() {
+		
+	public void inputAdd() {
 	  	System.out.println("ㅡ");
 	  	System.out.print("1. 추가구매 2. 구매완료\n");
 	  	System.out.print(": ");
