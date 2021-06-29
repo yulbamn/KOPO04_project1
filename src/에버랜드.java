@@ -1,4 +1,5 @@
 
+
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -29,7 +30,9 @@ public class 에버랜드 {
 	    todayDate = Integer.parseInt(today.substring(4,8));
 	    
 	    Scanner myInput = new Scanner(System.in);
-	    	do {
+
+	    do {
+	    while(true ) {
 	    	  	while(true) {
 	    	  		System.out.println("--------------------------------------");
 	    	  		System.out.println("이용날짜를 입력해주세요.(숫자로만 20210628)");
@@ -218,6 +221,8 @@ public class 에버랜드 {
 	    	  			else {price = 42000;}
 	    	  		} break;
 	    	  		}
+	    	break;
+	    	}  	
 	    	  	
 	    	  	System.out.println("ㅡ");
 	    	  	System.out.print("1. 추가구매 2. 구매완료\n");
@@ -229,8 +234,10 @@ public class 에버랜드 {
 	    	  	arrCount.add(count);
 	    	  	arrPrice.add(price);
 	    	  	arrB.add(b);
+	    	
 	    	} while(add == 1);	
 	    	
+
 			System.out.println("ㅡ");
 			int sum=0;
 			for(int i=0; i < arrTicket.size(); i++) {
