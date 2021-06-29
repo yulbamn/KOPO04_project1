@@ -117,6 +117,7 @@ public class 에버랜드 {
 	  	manAge = todayYear - birthYear;
 	  	if(todayDate < birthDate) {manAge = manAge - 1;} 
 	  	else {manAge = manAge + 0;}
+		System.out.printf("만 %d\n", manAge);
 	}
 	
 	public static void manType() {
@@ -265,7 +266,6 @@ public class 에버랜드 {
 	    		inputSocialnumber();
 	    		if (socialNumber.equals("0")) {continue;} 
 	    		confrimAge();
-	    		System.out.printf("만 %d\n", manAge);
 	    		manType();
 	    		System.out.println("ㅡ");
 	    		confirmCount();
