@@ -1,6 +1,6 @@
-package java0628;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -10,17 +10,16 @@ public class 에버랜드 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int todayYear, todayDate, birthYear, birthMonth, birthDay, birthDate, reservationDate, benefit, count, manAge, price, orderCount;
+		int todayYear, todayDate, birthYear, birthMonth, birthDay, birthDate, reservationDate, benefit, count, manAge, price;
 		int add = 0;
 		String ticket, socialNumber, age;
         String b = null;
         
-        //추가구매 배열
-        String[] arrTicket = new String[100];
-        String[] arrAge = new String[100];
-        int[] arrCount = new int[100];
-        int[] arrPrice = new int[100];
-        String[] arrB = new String[100];
+        ArrayList<String> arrTicket = new ArrayList<String>();
+        ArrayList<String> arrAge = new ArrayList<String>();
+        ArrayList<Integer> arrCount = new ArrayList<Integer>();
+        ArrayList<Integer> arrPrice = new ArrayList<Integer>();
+        ArrayList<String> arrB = new ArrayList<String>();
                	   
 		String pattern1 = "yyyyMMdd";
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern1);
@@ -30,8 +29,6 @@ public class 에버랜드 {
 	    todayDate = Integer.parseInt(today.substring(4,8));
 	    
 	    Scanner myInput = new Scanner(System.in);
-	    while(true ) {
-	    	orderCount=0;
 	    	do {
 	    	  	while(true) {
 	    	  		System.out.println("--------------------------------------");
@@ -226,26 +223,25 @@ public class 에버랜드 {
 	    	  	System.out.print("1. 추가구매 2. 구매완료\n");
 	    	  	System.out.print(": ");
 	    	  	add = myInput.nextInt();
-	    	  	
-	    	  	arrTicket[orderCount] = ticket;
-	    	  	arrAge[orderCount] = age;
-	    	  	arrCount[orderCount] = count;
-	    	  	arrPrice[orderCount] = price;
-	    	  	arrB[orderCount] = b;	
-	    	  	orderCount++;    	  	
+
+	    	  	arrTicket.add(ticket);
+	    	  	arrAge.add(age);
+	    	  	arrCount.add(count);
+	    	  	arrPrice.add(price);
+	    	  	arrB.add(b);
 	    	} while(add == 1);	
 	    	
 			System.out.println("ㅡ");
 			int sum=0;
-			for(int i=0; i < orderCount; i++) {
-				sum += arrPrice[i]*arrCount[i];
+			for(int i=0; i < arrTicket.size(); i++) {
+				sum += arrPrice.get(i)*arrCount.get(i);
 			}
 			System.out.printf("가격은 %d 입니다.\n", sum);	
 			System.out.println("감사합니다.");
 			System.out.println();
 			System.out.println("================= 에버랜드 =================");
-			for(int i=0; i < orderCount; i++) {
-			System.out.printf("%s\t%s\tX%d\t%d\t%s\n", arrTicket[i], arrAge[i], arrCount[i], arrPrice[i]*arrCount[i], arrB[i]);
+			for(int i=0; i < arrTicket.size(); i++) {
+			System.out.printf("%s\t%s\tX%d\t%d\t%s\n", arrTicket.get(i), arrAge.get(i), arrCount.get(i), arrPrice.get(i)*arrCount.get(i), arrB.get(i));
 			}
 			System.out.println("==========================================");
 			System.out.println();
@@ -253,9 +249,6 @@ public class 에버랜드 {
 			System.out.println();
 			System.out.println();
 			myInput.close();
-			break;
-			
-		}	
 	
 	}
 	
